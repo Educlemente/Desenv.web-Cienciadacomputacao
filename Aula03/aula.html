@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pré-Matrícula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-banner">
+        Escola Virtual
+    </header>
+
+    <h1 class="form-title">Formulário de Pré-Matrícula</h1>
+
+    <div class="container">
+        <form action="#" method="POST">
+            
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label for="nome">NOME DO ALUNO</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mae">NOME DA MÃE</label>
+                        <input type="text" id="mae" name="mae">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pai">NOME DO PAI</label>
+                        <input type="text" id="pai" name="pai">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="nascimento">NASCIMENTO</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">TELEFONE</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(61) 9 9999-9999">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de Matrícula</legend>
+                
+                <div class="grid-2">
+                
+                    <div class="form-group">
+                        <label for="serie">SÉRIE PRETENDIDA</label>
+                        <select id="serie" name="serie" class="campo-select">
+                            <option value="pre-escolar">Pré-escolar</option>
+                            <option value="ensino-fundamental">Ensino Fundamental</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label>TURNO</label>
+                        <div class="opcoes-grupo">
+                            <label class="opcao-label"><input type="radio" name="turno" value="manha"> Manhã</label>
+                            <label class="opcao-label"><input type="radio" name="turno" value="tarde"> Tarde</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>ATIVIDADES EXTRACURRICULARES</label>
+                        <div class="opcoes-grupo atividades-grid">
+                            <label class="opcao-label"><input type="checkbox" name="atividade" value="informatica"> Informática</label>
+                            <label class="opcao-label"><input type="checkbox" name="atividade" value="musica"> Música</label>
+                            <label class="opcao-label"><input type="checkbox" name="atividade" value="balet"> Balet</label>
+                            <label class="opcao-label"><input type="checkbox" name="atividade" value="pintura"> Pintura</label>
+                            <label class="opcao-label"><input type="checkbox" name="atividade" value="judo"> Judô</label>
+                            <label class="opcao-label"><input type="checkbox" name="atividade" value="futebol"> Futebol</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="botoes">
+                <button type="submit" class="btn-enviar">Envia Formulário</button>
+                <button type="reset" class="btn-limpar">Limpa Campos</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
